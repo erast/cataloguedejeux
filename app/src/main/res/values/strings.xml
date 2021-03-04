@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">cataloguedejeux</string>
+    <string name="game_title">Game Title:</string>
+    <string name="released">Released:</string>
+    <string name="genre">Genre:</string>
+    <string name="game_img">game img</string>
+    <string name="game_title">Game Title:</string>
+    <string name="genre">Genre:</string>
+    <string name="developer_s">Developer(s):</string>
+    <string name="description">Description:</string>
+    <string name="game_url">Game URL:</string>
+    <string name="todo">TODO</string>
+    <string name="publisher">Publisher:</string>
+    <string name="rating">Rating:</string>
+    <string name="release_date">Release Date:</string>
 </resources>

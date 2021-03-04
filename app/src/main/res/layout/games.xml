@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+            android:id="@+id/gameimgdis"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@android:color/background_dark"
+            android:contentDescription="@string/game_img" />
+
+
+        <TextView
+            android:id="@+id/gametitleid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/gameimgdis"
+            android:paddingLeft="5dp"
+            android:text="@string/game_title"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/gameimgdis"
+            android:paddingStart="5dp" />
+
+        <TextView
+            android:id="@+id/gamereleaseid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gametitleid"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/gameimgdis"
+            android:padding="5dp"
+            android:text="@string/released"
+            android:layout_toEndOf="@id/gameimgdis" />
+
+        <TextView
+            android:id="@+id/gamegenreid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gamereleaseid"
+            android:layout_toRightOf="@id/gameimgdis"
+            android:padding="5dp"
+            android:text="@string/genre"
+            android:layout_toEndOf="@id/gameimgdis" />
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

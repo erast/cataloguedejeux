@@ -26,7 +26,8 @@
                 android:id="@+id/gameimgID"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:background="@android:color/background_dark" />
+                android:background="@android:color/background_dark"
+                android:contentDescription="@string/todo" />
 
             <TextView
                 android:id="@+id/gametitledet"
@@ -35,9 +36,10 @@
                 android:layout_toEndOf="@id/gameimgID"
                 android:layout_toRightOf="@id/gameimgID"
                 android:paddingLeft="5dp"
-                android:text="Game Title:"
+                android:text="@string/game_title"
                 android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:paddingStart="5dp" />
 
             <TextView
                 android:id="@+id/gamereleasedate"
@@ -46,7 +48,7 @@
                 android:layout_below="@id/gametitledet"
                 android:layout_toRightOf="@id/gameimgID"
                 android:padding="5dp"
-                android:text="Release Date:" />
+                android:text="@string/release_date" />
 
 
             <TextView
@@ -57,7 +59,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_toRightOf="@id/gameimgID"
                 android:paddingLeft="5dp"
-                android:text="Genre:" />
+                android:text="@string/genre"
+                android:paddingStart="5dp" />
 
             <TextView
                 android:id="@+id/movieRatingIDDet"
@@ -66,7 +69,8 @@
                 android:layout_below="@id/gamegenredet"
                 android:layout_toRightOf="@id/gameimgID"
                 android:paddingLeft="5dp"
-                android:text="Rating:" />
+                android:text="@string/rating"
+                android:layout_toEndOf="@id/gameimgID" />
 
             <TextView
                 android:id="@+id/publisherdet"
@@ -75,7 +79,9 @@
                 android:layout_below="@id/movieRatingIDDet"
                 android:layout_toRightOf="@id/gameimgID"
                 android:paddingLeft="5dp"
-                android:text="Publisher:" />
+                android:text="@string/publisher"
+                android:paddingStart="5dp"
+                android:layout_toEndOf="@id/gameimgID" />
 
 
             <TextView
@@ -86,7 +92,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="10dp"
                 android:padding="5dp"
-                android:text="Developer(s):" />
+                android:text="@string/developer_s" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
@@ -111,7 +117,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            android:text="Description:" />
+            android:text="@string/description" />
 
         <TextView
             android:id="@+id/gameurldet"
@@ -119,7 +125,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/descdet"
             android:padding="5dp"
-            android:text="Game URL:" />
+            android:text="@string/game_url" />
 
     </RelativeLayout>
 
